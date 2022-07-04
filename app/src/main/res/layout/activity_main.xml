@@ -6,53 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--    <ImageView-->
-<!--        android:id="@+id/arrowIcon"-->
-<!--        android:layout_width="@dimen/size_icon_normal"-->
-<!--        android:layout_height="@dimen/size_icon_normal"-->
-<!--        android:layout_marginLeft="@dimen/margin_normal"-->
-<!--        android:layout_marginTop="@dimen/margin_larg"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        android:src="@drawable/ic_baseline_arrow_back_24"/>-->
-
-
-<!--    <TextView-->
-<!--        android:id="@+id/appbarTitle"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Details"-->
-<!--        android:textStyle="bold"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="18dp"-->
-<!--        android:layout_marginTop="@dimen/margin_larg"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/shoppingIcon"-->
-<!--        android:layout_width="@dimen/size_icon_normal"-->
-<!--        android:layout_height="@dimen/size_icon_normal"-->
-<!--        android:layout_marginRight="@dimen/margin_normal"-->
-<!--        android:layout_marginTop="@dimen/margin_larg"-->
-<!--        android:tint="@color/coffee_color"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        android:src="@drawable/ic_outline_shopping_car"-->
-<!--        tools:ignore="UseAppTint" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/notificationIcon"-->
-<!--        android:layout_width="@dimen/size_notification"-->
-<!--        android:layout_height="@dimen/size_notification"-->
-<!--        android:tint="@color/green_color"-->
-<!--        app:layout_constraintEnd_toEndOf="@id/shoppingIcon"-->
-<!--        app:layout_constraintTop_toTopOf="@id/shoppingIcon"-->
-<!--        android:src="@drawable/ic__record"-->
-<!--        tools:ignore="UseAppTint" />-->
-
-
     <ImageView
         android:id="@+id/backgroundImg"
         android:layout_width="match_parent"
@@ -97,20 +50,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
-
-
-<!--    <com.google.android.material.imageview.ShapeableImageView-->
-<!--        android:id="@+id/logoCoffe"-->
-<!--        android:layout_width="240dp"-->
-<!--        android:layout_height="340dp"-->
-<!--        android:src="@drawable/logo_coffee"-->
-<!--        app:layout_constraintBottom_toBottomOf="@id/backgroundImg"-->
-<!--        app:layout_constraintEnd_toEndOf="@id/backgroundImg"-->
-<!--        app:layout_constraintHorizontal_bias="0.47"-->
-<!--        app:layout_constraintStart_toStartOf="@id/backgroundImg"-->
-<!--        app:layout_constraintTop_toTopOf="@id/backgroundImg"-->
-<!--        app:layout_constraintVertical_bias="0.04"-->
-<!--        app:shapeAppearanceOverlay="@drawable/background_logo" />-->
 
     <TextView
         android:id="@+id/coffeeType"
@@ -441,6 +380,5 @@
             android:elevation="@dimen/shadow_size"
             android:outlineAmbientShadowColor="@color/primary_color"
             tools:ignore="UseAppTint"/>
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
