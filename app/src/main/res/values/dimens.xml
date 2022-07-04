@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="size_notification" tools:ignore="MissingDefaultResource">12dp</dimen>
+    <dimen name="size_icon_normal">24dp</dimen>
+    <dimen name="size_btn_icon_normal">36dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_larg">24dp</dimen>
+    <dimen name="margin_mid">8dp</dimen>
+    <dimen name="btn_image_size">64dp</dimen>
+    <dimen name="shadow_size">6dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="full_radius">100dp</dimen>
+    <dimen name="readd_btn_size">35dp</dimen>
+    <dimen name="logo_size">300dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="background_size">180dp</dimen>
+</resources>

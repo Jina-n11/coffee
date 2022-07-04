@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/arrowIcon"-->
+<!--        android:layout_width="@dimen/size_icon_normal"-->
+<!--        android:layout_height="@dimen/size_icon_normal"-->
+<!--        android:layout_marginLeft="@dimen/margin_normal"-->
+<!--        android:layout_marginTop="@dimen/margin_larg"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:src="@drawable/ic_baseline_arrow_back_24"/>-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/appbarTitle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Details"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="18dp"-->
+<!--        android:layout_marginTop="@dimen/margin_larg"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/shoppingIcon"-->
+<!--        android:layout_width="@dimen/size_icon_normal"-->
+<!--        android:layout_height="@dimen/size_icon_normal"-->
+<!--        android:layout_marginRight="@dimen/margin_normal"-->
+<!--        android:layout_marginTop="@dimen/margin_larg"-->
+<!--        android:tint="@color/coffee_color"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:src="@drawable/ic_outline_shopping_car"-->
+<!--        tools:ignore="UseAppTint" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/notificationIcon"-->
+<!--        android:layout_width="@dimen/size_notification"-->
+<!--        android:layout_height="@dimen/size_notification"-->
+<!--        android:tint="@color/green_color"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/shoppingIcon"-->
+<!--        app:layout_constraintTop_toTopOf="@id/shoppingIcon"-->
+<!--        android:src="@drawable/ic__record"-->
+<!--        tools:ignore="UseAppTint" />-->
+
+
+    <ImageView
+        android:id="@+id/backgroundImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_larg"
+        android:padding="@dimen/margin_normal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_img"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:layout_width="@dimen/background_size"
+        android:layout_height="@dimen/background_size"
+        android:background="@drawable/background_logo"
+        android:layout_marginBottom="@dimen/margin_larg"
+        app:layout_constraintBottom_toBottomOf="@+id/logoCoffee"
+        app:layout_constraintEnd_toEndOf="@id/backgroundImg"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@id/backgroundImg"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/logoCoffee"
+        android:layout_width="@dimen/logo_size"
+        android:layout_height="@dimen/logo_size"
+        android:layout_marginTop="@dimen/margin_larg"
+        android:layout_marginBottom="@dimen/margin_larg"
+        android:layout_marginStart="@dimen/small_margin"
+        android:src="@drawable/logo_coffee"
+        app:layout_constraintEnd_toEndOf="@id/backgroundImg"
+        app:layout_constraintStart_toStartOf="@id/backgroundImg"
+        app:layout_constraintTop_toTopOf="@id/backgroundImg"
+        tools:ignore="MissingConstraints" />
+
+    <include
+        layout="@layout/appbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+<!--    <com.google.android.material.imageview.ShapeableImageView-->
+<!--        android:id="@+id/logoCoffe"-->
+<!--        android:layout_width="240dp"-->
+<!--        android:layout_height="340dp"-->
+<!--        android:src="@drawable/logo_coffee"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/backgroundImg"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/backgroundImg"-->
+<!--        app:layout_constraintHorizontal_bias="0.47"-->
+<!--        app:layout_constraintStart_toStartOf="@id/backgroundImg"-->
+<!--        app:layout_constraintTop_toTopOf="@id/backgroundImg"-->
+<!--        app:layout_constraintVertical_bias="0.04"-->
+<!--        app:shapeAppearanceOverlay="@drawable/background_logo" />-->
+
+    <TextView
+        android:id="@+id/coffeeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caramel\nFrappuccino"
+        android:layout_marginTop="@dimen/margin_larg"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundImg"
+        app:layout_constraintEnd_toEndOf="@id/backgroundImg"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/backgroundImg"
+        app:layout_constraintTop_toTopOf="@id/backgroundImg"
+        app:layout_constraintVertical_bias="0.481" />
+
+
+    <TextView
+        android:id="@+id/sizeOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:text="@string/size_options"
+        android:textColor="@color/gray_light"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/backgroundImg"
+        app:layout_constraintTop_toBottomOf="@id/coffeeType"/>
+
+
+
+
+    <TextView
+        android:id="@+id/coffeePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$30.00"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/primary_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundImg"
+        app:layout_constraintEnd_toEndOf="@id/backgroundImg"
+        app:layout_constraintTop_toTopOf="@id/backgroundImg"
+        app:layout_constraintVertical_bias="0.481" />
+
+
+
+
+    <TextView
+        android:id="@+id/coffeePriceHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="Best Sales"
+        android:textColor="#B3B2B6"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@id/coffeePrice"
+        app:layout_constraintTop_toBottomOf="@id/coffeePrice" />
+
+
+    <TextView
+        android:id="@+id/addToOrderBtn"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/coffee_button_click"
+        android:paddingLeft="@dimen/margin_normal"
+        android:paddingTop="@dimen/margin_mid"
+        android:paddingRight="@dimen/margin_normal"
+        android:paddingBottom="@dimen/margin_mid"
+        android:elevation="@dimen/shadow_size"
+        android:text="Add to Order"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@color/primary_light"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundImg"
+        app:layout_constraintEnd_toEndOf="@id/backgroundImg" />
+
+
+    <LinearLayout
+        android:id="@+id/btnsCoffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/small_margin"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/sizeOptions"
+        app:layout_constraintTop_toBottomOf="@+id/sizeOptions"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnCoffee1"
+                android:layout_width="@dimen/btn_image_size"
+                android:layout_height="@dimen/btn_image_size"
+
+                android:layout_marginEnd="@dimen/margin_larg"
+                android:layout_marginBottom="@dimen/margin_mid"
+                android:background="@drawable/coffee_botton"
+                android:src="@drawable/ic_coffee_cup_drink_svgrepo_com"
+                android:tint="@color/icon_dark"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/titleCoffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_mid"
+                android:layout_marginEnd="@dimen/margin_larg"
+                android:text="Tall"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/hintCoffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/margin_larg"
+                android:layout_marginStart="@dimen/margin_mid"
+                android:layout_marginBottom="@dimen/margin_mid"
+                android:text="12 FI Oz"
+                android:textColor="@color/gray_light"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnCoffee2"
+                android:layout_width="@dimen/btn_image_size"
+                android:layout_height="@dimen/btn_image_size"
+                android:layout_marginEnd="@dimen/margin_larg"
+                android:layout_marginBottom="@dimen/margin_mid"
+                android:background="@drawable/coffee_button_click"
+                android:elevation="@dimen/shadow_size"
+                android:outlineAmbientShadowColor="@color/primary_color"
+                android:src="@drawable/ic_coffee"
+                android:tint="@color/icon_light"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/titleCoffee1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_mid"
+                android:layout_marginEnd="@dimen/margin_larg"
+                android:text="Grande"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/hintCoffee1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/margin_larg"
+                android:layout_marginStart="@dimen/margin_mid"
+                android:layout_marginBottom="@dimen/margin_mid"
+                android:text="16 FI Oz"
+                android:textColor="@color/gray_light"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnCoffee3"
+                android:layout_width="@dimen/btn_image_size"
+                android:layout_height="@dimen/btn_image_size"
+                android:layout_marginEnd="@dimen/margin_larg"
+                android:layout_marginBottom="@dimen/margin_mid"
+                android:background="@drawable/coffee_botton"
+                android:src="@drawable/ic_coffee"
+                android:tint="@color/icon_dark"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/titleCoffee2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_mid"
+                android:layout_marginEnd="@dimen/margin_larg"
+                android:text="Venti"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/hintCoffee2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/margin_larg"
+                android:layout_marginStart="@dimen/margin_mid"
+                android:layout_marginBottom="@dimen/margin_mid"
+                android:text="24 FI Oz"
+                android:textColor="@color/gray_light"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnCoffee4"
+                android:layout_width="@dimen/btn_image_size"
+                android:layout_height="@dimen/btn_image_size"
+                android:layout_marginEnd="@dimen/margin_larg"
+                android:layout_marginBottom="@dimen/margin_mid"
+                android:background="@drawable/coffee_botton"
+                android:src="@drawable/ic_coffee"
+                android:tint="@color/icon_dark"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/titleCoffee3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_mid"
+                android:layout_marginEnd="@dimen/margin_larg"
+                android:text="Custom"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/hintCoffee3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/margin_larg"
+                android:layout_marginStart="@dimen/margin_mid"
+                android:layout_marginBottom="@dimen/margin_mid"
+                android:text="-- FI Oz"
+                android:textColor="@color/gray_light"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addbtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginStart="@dimen/margin_normal"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundImg"
+        app:layout_constraintStart_toStartOf="@id/backgroundImg">
+
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="@dimen/size_btn_icon_normal"
+            android:layout_height="@dimen/size_btn_icon_normal"
+            android:background="@drawable/coffee_button_click"
+            android:layout_marginBottom="@dimen/margin_mid"
+            android:src="@drawable/ic_add"
+            android:tint="@color/icon_light"
+            android:elevation="@dimen/shadow_size"
+            android:outlineAmbientShadowColor="@color/primary_color"
+            tools:ignore="UseAppTint"/>
+
+
+        <TextView
+            android:id="@+id/countt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_mid"
+            android:layout_marginRight="@dimen/margin_mid"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text=" 1 "
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/move"
+            android:layout_width="@dimen/size_btn_icon_normal"
+            android:layout_height="@dimen/size_btn_icon_normal"
+            android:layout_marginEnd="@dimen/margin_larg"
+            android:background="@drawable/coffee_button_click"
+            android:layout_marginBottom="@dimen/margin_mid"
+            android:src="@drawable/ic_remove"
+            android:tint="@color/icon_light"
+            android:elevation="@dimen/shadow_size"
+            android:outlineAmbientShadowColor="@color/primary_color"
+            tools:ignore="UseAppTint"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
